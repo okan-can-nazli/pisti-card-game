@@ -26,6 +26,9 @@ INITIAL_TABLE_CARDS = 4
 #Deck loader
 def load_deck(deck_list, difficulty_choice, filepath="deck.csv"):
     try:
+        print("Deck is Loading...")
+        time.sleep(1)
+        
         with open(filepath, newline="", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:  # ← moved inside the 'try' block
@@ -311,6 +314,8 @@ class GameActions:
             #THE_5 Pisti condition
             if self.paired_rank == THE_5:
                 
+                self.is_pisti = True
+                
                 # for player
                 if self.current_turn == "player":
                     self.instant_win = "player"
@@ -571,6 +576,7 @@ def main():
         
         if game.is_pisti:
             printer.title_printer("   PİŞTİ!!!")
+            time.sleep(1)
             game.is_pisti = False
 
 
