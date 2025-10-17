@@ -146,15 +146,23 @@ pisti-card-game/
 
 Building this project as my first Python game taught me:
 
-- **Object-Oriented Programming**: Designing classes (GameActions, Printer) and managing complex game state
-- **Game Logic Implementation**: Translating traditional card game rules into code with proper win conditions
-- **Rule-Based AI Algorithm Design**: Creating strategic decision-making for computer opponent using card frequency analysis
-- **Multi-threading**: Running background music without blocking main gameplay loop
-- **File I/O & Error Handling**: Reading CSV data safely and managing music files with proper exception handling
-- **User Input Validation**: Ensuring robust input handling for names, numbers, and game choices
-- **Terminal UI Design**: Creating an engaging ASCII-based interface with card graphics
-- **Game State Management**: Tracking turns, scores, rounds, and collections efficiently
-- **Code Organization**: Separating concerns between game logic and display logic
+- **Object-Oriented Programming**: Designing classes (`GameActions`, `Printer`) to manage game logic, state, and display separately  
+- **Game Logic Implementation**: Translating traditional card game rules (Pişti) into code with correct win conditions and scoring  
+- **Rule-Based AI Algorithm Design**: Creating a strategic computer opponent using card frequency analysis and conditional logic  
+- **Multi-threading**: Running background music in parallel without interrupting gameplay  
+- **File I/O & Error Handling**: Reading CSV deck files safely and handling missing files or exceptions gracefully  
+- **User Input Validation**: Handling player names, win points, and choices robustly to prevent crashes  
+- **Terminal UI Design**: Creating an engaging ASCII-based interface with dynamic card display and borders  
+- **Game State Management**: Tracking hands, table cards, piles, rounds, scores, and instant-win conditions efficiently  
+- **Code Organization & Readability**: Separating concerns between game logic, AI, and display for maintainability  
+- **Use of External Libraries**: Leveraging `pygame`, `pyfiglet`, `shutil`, and `collections.Counter` to enhance functionality  
+
+---
+
+> **🌟 OVERALL**  
+> This is my very first Python project! It helped me apply everything I learned, from AI design to multi-threading, and serves as proof that I can confidently build interactive programs in Python.
+
+
 
 ### Challenges Overcome
 - Implementing Pişti rules correctly, especially the instant-win 5-5 condition

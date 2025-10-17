@@ -291,6 +291,7 @@ class GameActions:
                 #declare enemy_card
                 self.enemy_card = random.choice(best_cards)
 
+
             #Enemy plays the card
             self.showed_cards.append(self.enemy_card)
             self.table.append(self.enemy_card)
@@ -571,9 +572,7 @@ def main():
         
         
         game.play_a_turn() #play a turn then check pair or JOKER_CARD condition
-    
-
-        
+            
         if game.is_pisti:
             printer.title_printer("   PİŞTİ!!!")
             time.sleep(1)
